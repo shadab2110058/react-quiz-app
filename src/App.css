@@ -73,6 +73,15 @@
     height: 60%;
     width: 100%;
 }
+.prev button{
+    background-color: blueviolet;
+}
+.next button{
+    background-color: blueviolet;
+}
+.submit button{
+    background-color:green;
+}
 .questions{
     width: 50%;
     padding: 20px;
@@ -89,9 +98,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;  
 }
 .options{
     width: 40%;
@@ -109,6 +116,38 @@
 .options:hover{
     background-color:blue;
 }
+.options.correct{
+    animation : correct 3s ease forwards;
+}
+
+ @keyframes correct{
+    0%,22%,42%{
+        background-color:black;
+    }
+    20%,40%,60%{
+        background-color:blue;
+    }
+    60%,100%{
+     background-color: rgb(13, 226, 13);
+    }
+ }
+
+ .options.wrong{
+    animation : wrong 3s ease forwards;
+}
+
+ @keyframes wrong{
+    0%,22%,42%{
+        background-color:black;
+    }
+    20%,40%,60%{
+        background-color:blue;
+    }
+    60%,100%{
+     background-color: red;
+    }
+ }
+
  button{
    font-size: larger;
    padding: 10px;
