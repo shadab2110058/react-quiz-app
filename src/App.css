@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.app{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction:column;
+    background-image: url('./images/quizappback.webp');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+   height: 70%;
+   width: 60%;
+   /* background-color: aqua; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top{
+    height: 40%;
+    width: 100%;
+    /* background-color:brown; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.questions{
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: large;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answers{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+    
+}
+.options{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: large;
+}
+ button{
+   font-size: larger;
+   padding: 10px;
+   margin: 10px;
+   background-color: #fff;
+   
+}
+.button{
+    display: flex;
+    width: 55%;
+   justify-content:space-between;
+   align-items: center;
+   
 }

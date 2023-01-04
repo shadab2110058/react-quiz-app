@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import "./App.css"
+import data from "./Data.js"
 
-function App() {
+
+const App = () => {
+
+  const [ currentQuestion,setCurrentQuestion ] = useState(0)
+
+    const handleNext = () =>{
+      setCurrentQuestion((currentQuestion+1)%4);
+    }
+
+    const handlePrev = () =>{
+      if(currentQuestion>0)
+      {setCurrentQuestion((currentQuestion-1));}
+    }
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className='app'>
+      {/* <div className='container'> */}
+      <div className='top'>
+       timer
+      </div>
+      <div className='bottom'>
+        <div className='questions'>{data[currentQuestion].question}</div>
+        <div className='answers'>
+          {data[currentQuestion].options.map((ans,i)=>{
+        return <div className='options' key={i}>{ans.text}</div>
+      })}
+        </div>
+        <div className='button'>  
+        <div><button onClick={handlePrev}>prev</button></div>
+        <div><button onClick={handleNext}>next</button></div>
+        </div>
+      </div>
+      </div>
+    
+  )
 }
 
-export default App;
+export default App
