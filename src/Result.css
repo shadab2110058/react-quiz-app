@@ -1,0 +1,32 @@
+.result{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resultContainer{
+    height: 80%;
+    width: 60%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.congratulationText{
+    text-align: center;
+    
+}
+ h1{
+     color: aliceblue;
+}
+.resultScore{
+    text-align: center;
+    
+}
+ h2{
+     color: aliceblue;
+}
+

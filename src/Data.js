@@ -2,50 +2,50 @@ const data =
 [
     {
         id:1,
-        question:"what is your name",
+        question:"In React.js, how we can pass the data from one component to another in React.js ?",
         options : 
         [
-                  {     text:"Yusuf",correct:false       },
-                  {     text:"Arman",correct:true        },
-                  {     text:"Salman",correct:false      },
-                  {     text:"Shabu Shah",correct:false  },
+                  {     text:"SetState",correct:false       },
+                  {     text:"Render with arguments",correct:false        },
+                  {     text:"Props",correct:true     },
+                  {     text:"PropTypes",correct:false  },
         ]
         
     },
 
     {
         id:2,
-        question:"what is your favourite sweet",
+        question:"Which of the following command is used to create react-js-app ?",
         options : 
         [
-            {     text:"asdfg",correct:false     },
-            {     text:"dfg",correct:true      },
-            {     text:"asdfg",correct:false     },
-            {     text:"adfg",correct:false     },
+            {     text:"npx create-react-app appname",correct:true     },
+            {     text:"npm install create-react-app",correct:false     },
+            {     text:"npx install create-react-app -g",correct:false     },
+            {     text:"install - l create-react-app",correct:false     },
         ]
     },
 
     {
         id:3,
-        question:"what is your favourite game",
+        question:"In React.js which one of the following is used to create a class for Inheritance ?",
         options : 
         [
-            {     text:"asdfg",correct:false     },
-            {     text:"sdfghsdfg",correct:true      },
-            {     text:"asg",correct:false     },
-            {     text:"asghjdfg",correct:false     },
+            {     text:"Create",correct:false     },
+            {     text:"Extends",correct:true      },
+            {     text:"Inherits",correct:false     },
+            {     text:"Delete",correct:false     },
         ]
     },
 
     {
         id:4,
-        question:"what is your favourite food",
+        question:"Which of the following is a way to handle data in React.js ?",
         options : 
         [
-            {     text:"asdfg",correct:false     },
-                  {     text:"asdffghg",correct:true      },
-                  {     text:"asdfg",correct:false     },
-                  {     text:"asdfdjfg",correct:false     },
+                  {     text:"State & Props",correct:true     },
+                  {     text:"Services & Components",correct:false      },
+                  {     text:"State & Services",correct:false     },
+                  {     text:"State & Component",correct:false     },
         ]
     },
 ]

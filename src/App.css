@@ -22,7 +22,48 @@
 .top{
     height: 40%;
     width: 100%;
-    /* background-color:brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+.timer{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 20px;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px solid white;
+    position:absolute;
+    bottom: 1px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+.score{
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius:20px;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+.questionNumberText{
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius:20px;
+    font-size: larger;
+    font-weight: bolder;
+      color: white;
+      background-color: black;
+    border: 2px solid white;
 }
 .bottom{
     display: flex;
@@ -42,7 +83,7 @@
     font-size: large;
 }
 .answers{
-    width: 50%;
+    width: 54%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -64,6 +105,9 @@
     border-radius: 20px;
     border: 2px solid white;
     font-size: large;
+}
+.options:hover{
+    background-color:blue;
 }
  button{
    font-size: larger;
