@@ -29,4 +29,14 @@
  h2{
      color: aliceblue;
 }
+.restart{
+    height: 30%;
+    color: white;
+    padding: 10px;
+}
 
+@media screen and (max-width:815px){
+.resultContainer{
+    width: 92%;
+}
+}

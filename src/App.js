@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./App.css"
 import data from "./Data.js"
 import Result from './Result'
+import Timer from './Timer'
 
 
 const App = () => {
@@ -47,15 +48,22 @@ const App = () => {
      
     }
 
+    const handleRestart =() =>{
+      setCorrectAns(0);
+      setScore(0);
+      setCurrentQuestion(0)
+      setShowResult(false)
+    }
+
   return (
 
 <div className='app'>
-    {showResult?(<Result score={score} correctAns={correctAns}/>):( 
+    {showResult?(<Result score={score} correctAns={correctAns} handleRestart={handleRestart} />):( 
       <>
         <div className='top'>
-          <div className='timer'>30</div>
-          <div className='score'>Score <span>{score}</span></div>
-          <div className='questionNumberText'>Question {correctAns} of {data.length}</div>
+          <div className='timer'><Timer/></div>
+          {/* <div className='score'>Score <span>{score}</span></div> */}
+          {/* <div className='questionNumberText'>Question {correctAns} of {data.length}</div> */}
         </div>
         <div className='bottom'>
           <div className='questions'>{data[currentQuestion].question}</div>
