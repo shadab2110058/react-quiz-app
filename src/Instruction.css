@@ -10,8 +10,6 @@
 }
 
 .instructionContainer{
-    height: 60%;
-    width: 40%;
     background-color:#105694;
     display: flex;
     justify-content: center;
@@ -37,4 +35,13 @@ bottom: 5px;
 right: 40%;
 background-color:#87d2ec;
 border-radius:20px ;
+}
+
+@media screen and (max-width:815px){
+    p{
+        line-height: 20px;
+    }
+    .instructionContainer{
+        width: 80%;
+    }
 }
