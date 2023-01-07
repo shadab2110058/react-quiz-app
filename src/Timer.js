@@ -1,14 +1,18 @@
 import React,{useEffect, useState} from 'react'
 
+const Timer = (props) => {
 
-const Timer = () => {
-
-    const [timer, setTimer] = useState(60);
+    const [timer, setTimer] = useState(120);
 
     useEffect(()=>{
+      if(timer>0){
    const interval = setTimeout(()=>{
     setTimer((prev)=>prev-1);
-   },1000)
+   },500)}
+   else{
+    props.setShowResult(true);
+   }
+  
 })
   return timer
 }

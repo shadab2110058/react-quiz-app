@@ -1,0 +1,40 @@
+.instruction{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/instructionback.jpg');
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+}
+
+.instructionContainer{
+    height: 60%;
+    width: 40%;
+    background-color:#105694;
+    display: flex;
+    justify-content: center;
+    padding-left:30px;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+.heading h1{
+    color: brown;
+}
+
+p{
+    color: white;
+    font-size: x-large;
+    line-height: 5px;
+}
+
+.startQuizText{
+position: absolute;
+bottom: 5px;
+right: 40%;
+background-color:#87d2ec;
+border-radius:20px ;
+}

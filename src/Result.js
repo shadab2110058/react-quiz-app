@@ -11,6 +11,7 @@ const Result = (props) => {
             <div className='resutText'><h2>You attemped  { props.correctAns } correct Questions of {data.length} </h2></div>
             <div className='restart'><button onClick={props.handleRestart}>restart</button></div>
         </div>
+        
     </div>
   )
 }
