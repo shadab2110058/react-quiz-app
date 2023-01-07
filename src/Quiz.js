@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import { BrowserRouter, Route,Routes } from 'react-router-dom'
+// import { BrowserRouter, Route,Routes } from 'react-router-dom'
 import "./App.css"
 import data from "./Data.js"
-import Instruction from './Instruction'
+// import Instruction from './Instruction'
 import Result from './Result'
 import Timer from './Timer'
 

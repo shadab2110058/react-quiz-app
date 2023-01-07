@@ -12,6 +12,7 @@
 .instructionContainer{
     background-color:#105694;
     display: flex;
+    padding-right: 15px;
     justify-content: center;
     padding-left:30px;
     flex-direction: column;

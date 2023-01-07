@@ -8,7 +8,7 @@ const Timer = (props) => {
       if(timer>0){
    const interval = setTimeout(()=>{
     setTimer((prev)=>prev-1);
-   },500)}
+   },1000)}
    else{
     props.setShowResult(true);
    }
