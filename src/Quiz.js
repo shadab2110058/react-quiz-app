@@ -1,19 +1,23 @@
-import React,{useState} from 'react'
-// import { BrowserRouter, Route,Routes } from 'react-router-dom'
+import React,{useEffect, useState} from 'react'
 import "./App.css"
 import data from "./Data.js"
-// import Instruction from './Instruction'
+import useSound from 'use-sound'
 import Result from './Result'
 import Timer from './Timer'
+import cor from "./sound/correct.mp3";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Quiz = () => {
-    const [ currentQuestion,setCurrentQuestion ] = useState(0)
+
+  const [ currentQuestion,setCurrentQuestion ] = useState(0)
   const [ score,setScore ] = useState(0)
   const [ correctAns,setCorrectAns ] = useState(0)
   const [ selectedAnswer,setSelectedAnswer ] = useState(null)
   const [ showResult,setShowResult ] = useState(false)
   const [ className,setClassName ] = useState("options");
+  const [ letsPlay] = useSound()
 
 
     const handleNext = () =>{
@@ -34,17 +38,17 @@ const Quiz = () => {
     const handleAnswer = (ans) =>{
       setClassName("options active")
       setSelectedAnswer(ans);
-     
-
       if(ans.correct)
       {
          setScore(score+4);
          setClassName("options correct");
          setCorrectAns(correctAns+1);
+         toast.success('Correct Answer');
       }
       else{
         setScore(score-1);
         setClassName("options wrong");
+        toast.error('Wrong Answer');
       }
     }
 
@@ -54,6 +58,12 @@ const Quiz = () => {
       setCurrentQuestion(0)
       setShowResult(false)
     }
+
+    useEffect(()=>{
+      letsPlay(cor);
+    },[letsPlay])
+
+    
   return (
     <>
 
@@ -85,6 +95,7 @@ const Quiz = () => {
         </>
         )}
         </div>
+        <ToastContainer position='top-center' autoClose={1000}/>
         </>
   )
 }
