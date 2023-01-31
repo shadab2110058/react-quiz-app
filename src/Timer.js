@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 
 const Timer = (props) => {
 
@@ -6,7 +6,7 @@ const Timer = (props) => {
 
     useEffect(()=>{
       if(timer>0){
-   const interval = setTimeout(()=>{
+   setTimeout(()=>{
     setTimer((prev)=>prev-1);
    },1000)}
    else{
