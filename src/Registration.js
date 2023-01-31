@@ -5,7 +5,7 @@ import "./Registration.css"
 const Registration = () => {
    const navigate = useNavigate();
     const goToInstruction = () =>{
-        navigate("/react-quiz-app/instruction");
+        navigate("/instruction");
     }
   return (
     <div className='registrationForm'>

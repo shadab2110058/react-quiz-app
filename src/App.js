@@ -12,9 +12,9 @@ const App = () => {
     
     <BrowserRouter>
       <Routes>      
-        <Route path = "/react-quiz-app/" element={ <Registration/>}/>
-        <Route path = "/react-quiz-app/instruction" element={ <Instruction/>}/>
-        <Route path = "/react-quiz-app/quiz" element={<Quiz/>}/>
+        <Route path = "/" element={ <Registration/>}/>
+        <Route path = "/instruction" element={ <Instruction/>}/>
+        <Route path = "/quiz" element={<Quiz/>}/>
       </Routes>
     </BrowserRouter>
    

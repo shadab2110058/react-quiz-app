@@ -6,7 +6,7 @@ const Instruction = () => {
 
 const navigate = useNavigate();
 const goToQuiz=()=>{
-  navigate('/react-quiz-app/quiz');                       
+  navigate('/quiz');                       
 
 }
 
